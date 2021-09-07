@@ -441,7 +441,8 @@
 
         <div class="row justify-content-center">
             <div class="col-7">
-                <form>
+                <form method="POST" action="contact">
+                    {% csrf_token %}
                     <div class="mb-3">
                         <label for="InputName" class="form-label fs-5 fw-bold">Name</label>
                         <input type="text" name="name" class="form-control" required placeholder="Name">
